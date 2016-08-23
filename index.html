@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/directives/weather-report.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controllers/mainController.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controllers/forecastController.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/services/cityservice.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body ng-cloak>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">AngularJS Weather App</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right ">
+                    <li> <a href="#/"><i class="fa fa-home"></i>Home</a></li>
+                    <li> <a href="#/forecast"><i class="fa fa-bolt"></i>Forecast</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container" ng-cloak>
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>
